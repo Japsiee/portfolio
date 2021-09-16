@@ -13,12 +13,46 @@
 </head>
 <body>
 <section id="navbarBtn">
-	<div class="container-fluid p-0 py-4">
-		<button class="btn btn-primary mx-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-arrow-bar-down fs-3"></i></button>
+	<div class="container-fluid p-0 py-4 px-5">
+		<div class="btn-group">
+			<button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-chevron-down"></i>&nbsp;RESUME</button>
+			<button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-chevron-right"></i>&nbsp;CONTACTS</button>
+		</div>
 	</div>
 </section>
 
-<!-- NAVBAR -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+	<div class="offcanvas-header">
+		<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">CONTACTS</h5>
+		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+	<div class="offcanvas-body">
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1">Email</span>
+			<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" value="dyollsopaj@gmail.com" disabled>
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1">Phone</span>
+			<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" value="0956 139 1582" disabled>
+		</div>
+
+		<hr class="my-5" />
+
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1">Facebook</span>
+			<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" value="Japsiee.japs / Japsiee Japs" disabled>
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1">Twitter</span>
+			<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" value="@Japsiee24" disabled>
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1">Telegram</span>
+			<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" value="@japsiee24" disabled>
+		</div>
+	</div>
+</div>
+
 <section id="navbar">
 	<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
 		<div class="offcanvas-header d-flex flex-column justify-content-center">
@@ -35,23 +69,38 @@
 </section>
 
 <section id="home">
-	<div class="container-fluid m-0 p-lg-5" style="min-height: 80vh;">
+	<div class="container-fluid m-0 p-lg-5 d-flex flex-column justify-content-center" style="min-height: 90vh;">
 		<div class="introduction px-5 py-0">
-			<h1 class="display-3">Hello I am</h1>
-			<h1 class="display-1 text-center py-3 fw-bold text-primary" style="font-family: var(--font2);">John Lloyd Japos</h1>
-			<p class="fs-3 text-dark fw-bold">Aspiring Full Stack Developer</p>
+			<h1 class="display-3 text-center">Hello I am</h1>
+			<h1 class="display-1 text-center py-3 fw-bold text-primary" style="font-family: var(--font1); font-size: 10vmax;">John Lloyd Japos</h1>
+			<p class="fs-3 text-dark fw-bold text-center">Aspiring Full Stack Developer</p>
 		</div>
-		<div class="m-0 my-5 p-3 bg-dark">
-			<h1 class="text-white">
-				<span>About Me<span>
-			</h1>
-			<p class="lead text-white">
-				I am currently 3rd year and enrolled in Diploma in Information and Communication Technology in Polytechnic University of the Philippines Sta. Mesa Manila. I am very passionate when it comes to web development, I never stop exploring and learning since I started this journey. I was grade 11 back then when I watched "Who Am I", I was fascinated on how things like hacking works so I search things related on hacking and studied it. At first it was boring and at the same time confusing so after a month I gave up. 
-			</p>
+		
+		<p class="d-flex justify-content-center py-3">
+			<a class="btn btn-primary btn-lg" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">My Story</a>
+		</p>
 
-			<p class="lead text-white">
-				After my graduation in grade 12, I still don't know what course or path should I take until one day, I coincidentally rewatched the movie "Who Am I" and God! the movie was still good. That day I decided to become a developer and bring a massive security on websites or mobile apps. <a href="./public/files/resume.pdf" name="Japos Resume" class="text-decoration-none" download="Japos Resume">Please see my resume.</a>
-			</p>
+		<div class="d-flex justify-content-center position-relative">
+			<i class="bi bi-chevron-double-down text-dark fs-3" id="arrowDown"></i>
+		</div>
+
+		<div class="collapse" id="collapseExample">
+			<div class="m-0 p-3 bg-dark">
+				<h1 class="text-white">
+					<span>Who Am I ?<span>
+				</h1>
+				<p class="lead text-white">
+					My name is John Lloyd Patrick B. Japos but other prefers to call me "JP" short for John Patrick. <a href="./public/files/resume.pdf" class="text-decoration-none" download="Japos Resume">Please view my resume for more information about me. </a>I've been exploring and teaching myself for more than 9 months in the field of web development. Maybe some are confused how I made it in 9months so this is my story about that.
+				</p>
+
+				<p class="lead text-white">
+					I was grade 10 back then when I started to learn HTML and CSS and took me months before I understand the basics including javascript. Even though my website looks totally crap, non responsive, gridding sucks and etc. I'm still proud of myself. Then one day I stopped doing website and I don't clearly remember when that day was. When I was in my 1st year college I am not yet into programming so I didn't put a lot of effort until this pandemic start. It was December of year 2020 when I realized that I need now to take all things seriously so I started reading books again, watching youtube tutorials, reading documentations etc.
+				</p>
+
+				<p class="lead text-white">
+					On my 1st to 6th months I learned responsive web design, PHP, MySQL and gave me a lot of concepts and ideas about web development. I put a lot of effort inside this 6months that made me understand the gridding/flexbox layout, object oriented programming, MVC design pattern, databases and different types of them, security issues and many more. Then the rest of months left is currently me exploring more about NodeJS, Express Framework, React and etc.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
@@ -62,10 +111,11 @@
 			<div class="col-lg-6 p-5">
 				<h1 class="display-1 fw-normal text-uppercase border-start border-primary border-5 ps-5 hov-state" style="font-family: var(--font2);">Projects</h1>
 				<p class="lead fs-4 py-3">
-					Plans without an action are worthless and actioning without plan is pointless.
-					<hr>
-					These are some of my personal projects that I build on my journey on becoming a full-stack developer. You can click the buttons on both side to next or previous the image. You can only visit the website on larger screens.
+					"Other says you can't master 2 things at the same time but for me, I'll do my best to make it happen" - Japs
 				</p>
+				<hr />
+				<p class="lead fs-4 py-3">These are some of my projects that have been built on my journey to becoming a full stack developer</p>
+				<p class="text-danger fw-bold">Note: visiting my web projects required to have a larger screen size even it is responsive</p>
 			</div>
 			<div class="col-lg-6 p-lg-5">
 				<div id="carouselExampleCaptions" class="carousel slide shadow" data-bs-ride="carousel">
